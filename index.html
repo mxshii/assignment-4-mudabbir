@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدبّر | إدارة أموالك بذكاء</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="dashboard d-flex">
+
+        <!-- Start of sidebar -->
+        <section class="sidebar d-flex flex-column gap-20">
+            <div class="logo d-flex align-center gap-15">
+                <div class="logo-icon d-flex justify-center align-center">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="logo-text">
+                    <h2>مدبّر</h2>
+                    <p>إدارة أموالك بذكاء</p>
+                </div>
+            </div>
+
+            <div class="nav-links d-flex flex-column gap-10">
+                <div class="nav-item active d-flex align-center gap-10">
+                    <i class="fa-solid fa-house"></i>
+                    <span>الصفحة الرئيسية</span>
+                </div>
+                <div class="nav-item d-flex align-center gap-10">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <span>المعاملات</span>
+                </div>
+                <div class="nav-item d-flex align-center gap-10">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>الميزانيات</span>
+                </div>
+                <div class="nav-item d-flex align-center gap-10">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>المدخرات</span>
+                </div>
+                <div class="nav-item d-flex align-center gap-10">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>الفواتير الشهرية</span>
+                </div>
+            </div>
+
+            <div class="quick-actions d-flex flex-column gap-10">
+                <p class="section-label">إجراءات سريعة</p>
+                <div class="action-btn d-flex align-center gap-10">
+                    <div class="icon-box blue d-flex justify-center align-center">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <span>إرسال أموال</span>
+                </div>
+                <div class="action-btn d-flex align-center gap-10">
+                    <div class="icon-box green d-flex justify-center align-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span>إضافة أموال</span>
+                </div>
+                <div class="action-btn d-flex align-center gap-10">
+                    <div class="icon-box purple d-flex justify-center align-center">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <span>دفع فاتورة</span>
+                </div>
+                <div class="action-btn d-flex align-center gap-10">
+                    <div class="icon-box orange d-flex justify-center align-center">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>استثمار</span>
+                </div>
+            </div>
+        </section>
+        <!-- end of sidebar -->
+
+        <!-- start of main content -->
+        <div class="main-content">
+
+            <!-- Start of header -->
+            <header class="top-header d-flex justify-between align-center flex-wrap">
+                <div class="header-right d-flex align-center gap-15">
+                    <div class="logo-icon d-flex justify-center align-center">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h3>مدبّر</h3>
+                        <p>إدارة أموالك بذكاء</p>
+                    </div>
+                    <div class="status-badge d-flex align-center gap-10">
+                        <span class="dot"></span>
+                        <span>متصل</span>
+                    </div>
+                </div>
+
+                <div class="header-left d-flex align-center gap-10">
+                    <div class="icon-circle d-flex justify-center align-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="icon-circle notification d-flex justify-center align-center">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="badge d-flex justify-center align-center">2</span>
+                    </div>
+                    <div class="user-profile d-flex align-center gap-10">
+                        <div class="user-info">
+                            <h4>عمر شريف</h4>
+                            <p>حساب مميز</p>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="images/0dbe98ed7af848b8f89a784407fe3e86.jpg" alt="سيف أسامة">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End of header -->
+
+            <!-- Start of stats section -->
+            <section class="stats-section d-flex justify-between flex-wrap">
+                <div class="stat-card">
+                    <p class="stat-title">الرصيد الحالي</p>
+                    <h2 class="stat-value">700 جنية</h2>
+                    <p class="stat-change negative"><i class="fa-solid fa-arrow-down"></i> -91.7%</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">الدخل</p>
+                    <h2 class="stat-value">15,000 جنية</h2>
+                    <p class="stat-change positive"><i class="fa-solid fa-arrow-up"></i> +8.2%</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">المصروفات</p>
+                    <h2 class="stat-value">17,750 جنية</h2>
+                    <p class="stat-change negative"><i class="fa-solid fa-arrow-down"></i> +77.5%</p>
+                </div>
+            </section>
+            <!-- End of stats section -->
+
+            <!-- start of middle section -->
+            <section class="middle-section d-flex justify-between flex-wrap">
+
+                <div class="right-column d-flex flex-column gap-20">
+                    <!-- start of activities -->
+                    <section class="card-box">
+                        <div class="box-header d-flex justify-between align-center">
+                            <h3>الأنشطة الحديثة</h3>
+                        </div>
+
+                        <div class="activity-item blue-bg d-flex gap-10">
+                            <div class="icon-box blue round d-flex justify-center align-center">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="act-details">
+                                <div class="d-flex justify-between align-center">
+                                    <h4>إنشاء حساب توفير جديد</h4>
+                                    <span class="tag blue">حساب</span>
+                                </div>
+                                <p>تم إنشاء حساب توفير بنك الأهلي بنجاح</p>
+                                <span class="time">منذ ساعة واحدة</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item green-bg d-flex gap-10">
+                            <div class="icon-box green round d-flex justify-center align-center">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <div class="act-details">
+                                <div class="d-flex justify-between align-center">
+                                    <h4>إضافة بطاقة جديدة</h4>
+                                    <span class="tag green">بطاقة</span>
+                                </div>
+                                <p>تمت إضافة بطاقة Visa الجديدة ****2847</p>
+                                <span class="time">منذ 3 ساعات</span>
+                            </div>
+                        </div>
+
+                        <div class="view-all text-center">عرض جميع الأنشطة (23)</div>
+                    </section>
+                    <!-- end of activities -->
+
+                    <!-- start of monthly bills -->
+                    <section class="card-box">
+                        <div class="box-header d-flex justify-between align-center">
+                            <h3>الفواتير الشهرية</h3>
+                            <span class="more-link">عرض الكل <i class="fa-solid fa-chevron-left"></i></span>
+                        </div>
+
+                        <div class="bills-total text-center">
+                            <h2>1920 جنية</h2>
+                            <p>إجمالي الفواتير الشهرية</p>
+                        </div>
+
+                        <div class="bills-list d-flex flex-wrap justify-between">
+                            <div class="bill-item text-center">
+                                <div class="icon-box blue m-auto d-flex justify-center align-center">
+                                    <i class="fa-solid fa-wifi"></i>
+                                </div>
+                                <p class="bill-name">إنترنت</p>
+                                <p class="bill-price">450 جنية</p>
+                                <span class="bill-due danger">يستحق في 3 أيام</span>
+                            </div>
+                            <div class="bill-item text-center">
+                                <div class="icon-box yellow m-auto d-flex justify-center align-center">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <p class="bill-name">كهرباء</p>
+                                <p class="bill-price">400 جنية</p>
+                                <span class="bill-due warning">يستحق في 5 أيام</span>
+                            </div>
+                            <div class="bill-item text-center">
+                                <div class="icon-box green m-auto d-flex justify-center align-center">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <p class="bill-name">هاتف</p>
+                                <p class="bill-price">290 جنية</p>
+                                <span class="bill-due positive">يستحق في 10 أيام</span>
+                            </div>
+                            <div class="bill-item text-center">
+                                <div class="icon-box red m-auto d-flex justify-center align-center">
+                                    <i class="fa-brands fa-steam"></i>
+                                </div>
+                                <p class="bill-name">Steam</p>
+                                <p class="bill-price">780 جنية</p>
+                                <span class="bill-due normal">يستحق في 15 يوم</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end of monthly bills -->
+                </div>
+
+                <!-- start of transactions -->
+                <section class="card-box transactions-box">
+                    <div class="box-header d-flex justify-between align-center">
+                        <h3>المعاملات الأخيرة</h3>
+                        <span class="more-link">عرض الكل <i class="fa-solid fa-chevron-left"></i></span>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <div class="table-row table-head d-flex justify-between align-center">
+                            <div class="col-user">المعاملة</div>
+                            <div class="col">الفئة</div>
+                            <div class="col">التاريخ</div>
+                            <div class="col">الحالة</div>
+                            <div class="col">المبلغ</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="avatar">
+                                    <img src="images/53b52800ba39a25b2895c3e31b42891c.jpg" alt="محمود النجار">
+                                </div>
+                                <div>
+                                    <h4>محمود النجار</h4>
+                                    <p>تحويل أموال</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill green"><i class="fa-solid fa-arrow-down"></i> دخل</span>
+                            </div>
+                            <div class="col date-col">14 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount positive">+350 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box orange round d-flex justify-center align-center">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                </div>
+                                <div>
+                                    <h4>كافيه Coff</h4>
+                                    <p>دفع كافيه</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill orange"><i class="fa-solid fa-mug-hot"></i> مشروبات</span>
+                            </div>
+                            <div class="col date-col">14 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-2200 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box blue round d-flex justify-center align-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <div>
+                                    <h4>مشتريات Amazon</h4>
+                                    <p>تسوق إلكتروني</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill blue"><i class="fa-solid fa-cart-shopping"></i>
+                                    تسوق</span></div>
+                            <div class="col date-col">13 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-1250 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="avatar">
+                                    <img src="images/69f857203505e0d4c8f42ac9486ad5d6.jpg" alt="عمر المهدي">
+                                </div>
+                                <div>
+                                    <h4>عمر المهدي</h4>
+                                    <p>دفع فاتورة مقسمة</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill purple"><i class="fa-solid fa-users"></i> فاتورة
+                                    مقسمة</span></div>
+                            <div class="col date-col">13 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-1400 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="avatar">
+                                    <img src="images/0dbe98ed7af848b8f89a784407fe3e86.jpg" alt="محمد عوض">
+                                </div>
+                                <div>
+                                    <h4>محمد عوض</h4>
+                                    <p>دفع عمل حر</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill green"><i class="fa-solid fa-briefcase"></i> عمل</span>
+                            </div>
+                            <div class="col date-col">12 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount positive">+2500 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box red round d-flex justify-center align-center">
+                                    <i class="fa-solid fa-gas-pump"></i>
+                                </div>
+                                <div>
+                                    <h4>محطة وقود Shell</h4>
+                                    <p>شراء وقود</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill red"><i class="fa-solid fa-car"></i> مواصلات</span></div>
+                            <div class="col date-col">12 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill pending">معلق</span></div>
+                            <div class="col amount">-700 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box purple round d-flex justify-center align-center">
+                                    <i class="fa-brands fa-steam"></i>
+                                </div>
+                                <div>
+                                    <h4>اشتراك Steam</h4>
+                                    <p>اشتراك شهري</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill purple"><i class="fa-solid fa-gamepad"></i> ترفيه</span></div>
+                            <div class="col date-col">11 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-780 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box teal round d-flex justify-center align-center">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+                                <div>
+                                    <h4>نادي FitLife</h4>
+                                    <p>عضوية شهرية</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill teal"><i class="fa-solid fa-heart-pulse"></i> صحة</span>
+                            </div>
+                            <div class="col date-col">10 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-500 جنية</div>
+                        </div>
+
+                        <div class="table-row d-flex justify-between align-center">
+                            <div class="col-user d-flex align-center gap-10">
+                                <div class="icon-box green round d-flex justify-center align-center">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4>كورس route frontend</h4>
+                                    <p>دورة تدريبية</p>
+                                </div>
+                            </div>
+                            <div class="col"><span class="pill green"><i class="fa-solid fa-book"></i> تعليم</span>
+                            </div>
+                            <div class="col date-col">9 أكتوبر، 2025</div>
+                            <div class="col"><span class="status-pill">مكتمل</span></div>
+                            <div class="col amount">-8000 جنية</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of transactions -->
+
+            </section>
+            <!-- end of middle section -->
+
+            <!-- start of bottom section -->
+            <section class="bottom-section d-flex justify-between flex-wrap">
+
+                <!-- start of budget -->
+                <section class="card-box budget-box">
+                    <div class="box-header d-flex justify-between align-center">
+                        <h3>نظرة عامة على الميزانية</h3>
+                        <span class="more-link">التفاصيل <i class="fa-solid fa-chevron-left"></i></span>
+                    </div>
+
+                    <div class="budget-summary">
+                        <div class="d-flex justify-between align-center">
+                            <div>
+                                <p class="sub-label">إجمالي الميزانية</p>
+                                <h2 class="big-num">10000 جنية</h2>
+                            </div>
+                            <div class="remaining-box">
+                                <p class="rem-label">المتبقي</p>
+                                <h4 class="rem-num">1750 جنية</h4>
+                            </div>
+                        </div>
+                        <div class="progress-info d-flex justify-between">
+                            <span>المستخدم: 8250 جنية</span>
+                            <span>82.5%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill blue-fill" style="width: 82.5%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="budget-list d-flex flex-column gap-15">
+                        <div class="budget-cat-card">
+                            <div class="d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-10">
+                                    <div class="icon-box orange d-flex justify-center align-center">
+                                        <i class="fa-solid fa-film"></i>
+                                    </div>
+                                    <div>
+                                        <h4>ترفيه</h4>
+                                        <p>الميزانية: 1500 جنية</p>
+                                    </div>
+                                </div>
+                                <div class="cat-left">
+                                    <h4>750 جنية</h4>
+                                    <span class="pill green">متبقي 50%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar small">
+                                <div class="progress-fill orange-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="budget-cat-card">
+                            <div class="d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-10">
+                                    <div class="icon-box red d-flex justify-center align-center">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <div>
+                                        <h4>فواتير</h4>
+                                        <p>الميزانية: 2000 جنية</p>
+                                    </div>
+                                </div>
+                                <div class="cat-left">
+                                    <h4>2000 جنية</h4>
+                                    <span class="pill red">مستخدم 100%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar small">
+                                <div class="progress-fill red-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="budget-cat-card">
+                            <div class="d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-10">
+                                    <div class="icon-box pink d-flex justify-center align-center">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div>
+                                        <h4>العناية الشخصية</h4>
+                                        <p>الميزانية: 1500 جنية</p>
+                                    </div>
+                                </div>
+                                <div class="cat-left">
+                                    <h4>1200 جنية</h4>
+                                    <span class="pill yellow">متبقي 20%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar small">
+                                <div class="progress-fill pink-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="budget-cat-card">
+                            <div class="d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-10">
+                                    <div class="icon-box green d-flex justify-center align-center">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <h4>مستلزمات المنزل</h4>
+                                        <p>الميزانية: 5000 جنية</p>
+                                    </div>
+                                </div>
+                                <div class="cat-left">
+                                    <h4>4300 جنية</h4>
+                                    <span class="pill green">متبقي 14%</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar small">
+                                <div class="progress-fill green-fill" style="width: 86%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of budget -->
+
+                <!-- start of accounts -->
+                <section class="card-box accounts-box">
+                    <div class="box-header d-flex justify-between align-center">
+                        <h3>ملخص الحساب</h3>
+                        <span class="more-link">التفاصيل <i class="fa-solid fa-chevron-left"></i></span>
+                    </div>
+
+                    <div class="accounts-list d-flex flex-column gap-15">
+                        <div class="account-item d-flex justify-between align-center">
+                            <div class="d-flex align-center gap-10">
+                                <div class="icon-box blue d-flex justify-center align-center">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <h4>حساب جاري</h4>
+                                    <p>بنك مصر [•••• 4532]</p>
+                                </div>
+                            </div>
+                            <div class="acc-balance">700 جنية</div>
+                        </div>
+
+                        <div class="account-item d-flex justify-between align-center">
+                            <div class="d-flex align-center gap-10">
+                                <div class="icon-box green d-flex justify-center align-center">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                </div>
+                                <div>
+                                    <h4>حساب التوفير</h4>
+                                    <p>بنك مصر [•••• 8901]</p>
+                                </div>
+                            </div>
+                            <div class="acc-balance">297,540 جنية</div>
+                        </div>
+
+                        <div class="account-item d-flex justify-between align-center">
+                            <div class="d-flex align-center gap-10">
+                                <div class="icon-box purple d-flex justify-center align-center">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </div>
+                                <div>
+                                    <h4>بطاقة ائتمان</h4>
+                                    <p>متاح: 1,850 جنية من 2,500 جنية</p>
+                                </div>
+                            </div>
+                            <div class="acc-balance negative">- 6,000 جنية</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of accounts -->
+
+            </section>
+            <!-- end of bottom section -->
+
+        </div>
+        <!-- end of main content -->
+
+    </div>
+</body>
+
+</html>
